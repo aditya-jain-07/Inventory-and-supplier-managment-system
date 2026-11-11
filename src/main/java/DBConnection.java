@@ -15,7 +15,7 @@ import java.util.Properties;
  * 1. Environment variables: DB_URL, DB_USER, DB_PASSWORD
  * 2. JVM System properties: -Ddb.url, -Ddb.user, -Ddb.password
  * 3. Local properties file: db.properties (in working directory or classpath)
- * 4. Fallback defaults (localhost:3306/dvms_db, root, MySql@2008)
+ * 4. Fallback defaults (localhost:3306/dvms_db, root, MY PASSWORD)
  *
  * Passwords are never logged or exposed in toString/safe output.
  */
