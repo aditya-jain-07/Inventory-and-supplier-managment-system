@@ -22,12 +22,12 @@ public class DBConnectionTest {
         assertNotNull(DBConnection.getUrl());
         assertTrue(DBConnection.getUrl().contains("dvms_db"));
         assertEquals("root", DBConnection.getUser());
-        assertEquals("MySql@2008", DBConnection.getPassword());
+        assertEquals("MyPASSWORD", DBConnection.getPassword());
 
         String safeInfo = DBConnection.getSafeConnectionInfo();
         assertTrue(safeInfo.contains("dvms_db"));
         assertTrue(safeInfo.contains("root"));
-        assertFalse(safeInfo.contains("MySql@2008"), "Password must never be logged or exposed in safe info");
+        assertFalse(safeInfo.contains("My PASSWORD"), "Password must never be logged or exposed in safe info");
     }
 
     @Test

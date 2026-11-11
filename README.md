@@ -42,7 +42,7 @@ The system evaluates credentials in the following priority order:
 1. **Environment Variables** (Highest precedence):
    - `DB_URL` (e.g., `jdbc:mysql://localhost:3306/dvms_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata`)
    - `DB_USER` (e.g., `root`)
-   - `DB_PASSWORD` (e.g., `MySql@2008`)
+   - `DB_PASSWORD` (e.g., `MyPASSWORD`)
 
 2. **Local Properties File (`db.properties`)**:
    Copy the provided `db.properties.example` template:
@@ -53,7 +53,7 @@ The system evaluates credentials in the following priority order:
    ```properties
    db.url=jdbc:mysql://localhost:3306/dvms_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata
    db.user=root
-   db.password=MySql@2008
+   db.password=MyPASSWORD
    ```
    *(Note: `db.properties` is registered in `.gitignore` to prevent committing secrets to source control).*
 
@@ -62,7 +62,7 @@ The system evaluates credentials in the following priority order:
    - Host: `localhost:3306`
    - Database: `dvms_db`
    - User: `root`
-   - Password: `MySql@2008` (with local compatibility fallback for existing environments)
+   - Password: `MyPASSWORD` (with local compatibility fallback for existing environments)
 
 ---
 
