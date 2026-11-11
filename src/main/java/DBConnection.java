@@ -33,7 +33,7 @@ public final class DBConnection {
     public static final String DEFAULT_PASSWORD = "MY PASSWORD";
 
     // Secondary fallback for local environment compatibility if primary credentials fail
-    private static final String LOCAL_COMPAT_PASSWORD = "12345";
+    private static final String LOCAL_COMPAT_PASSWORD = "YOUR_FALLBACK_PASSWORD";
 
     private static final String CONFIG_FILE_NAME = "db.properties";
 
