@@ -30,7 +30,7 @@ public final class DBConnection {
             "jdbc:mysql://" + DEFAULT_HOST + ":" + DEFAULT_PORT + "/" + DEFAULT_DATABASE
                     + "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata";
     public static final String DEFAULT_USER = "root";
-    public static final String DEFAULT_PASSWORD = "MySql@2008";
+    public static final String DEFAULT_PASSWORD = "MY PASSWORD";
 
     // Secondary fallback for local environment compatibility if primary credentials fail
     private static final String LOCAL_COMPAT_PASSWORD = "12345";
